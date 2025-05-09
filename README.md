@@ -62,6 +62,7 @@ nodemon server.js
 **POST** `/api/auth/register`
 
 **Body**
+
 ```json
 {
   "name": "Admin",
@@ -76,6 +77,7 @@ nodemon server.js
 **POST** `/api/auth/login`
 
 **Body**
+
 ```json
 {
   "email": "admin@example.com",
@@ -84,6 +86,7 @@ nodemon server.js
 ```
 
 **Response**
+
 ```json
 {
   "token": "JWT_TOKEN"
@@ -106,6 +109,7 @@ Use this token in headers:
 **POST** `/api/hotel`
 
 **Form-Data**
+
 - `hotel_image`: File (image)
 - `name`: String
 - `location`: String
@@ -144,6 +148,7 @@ Same body as add.
 **POST** `/api/room`
 
 **Form-Data**
+
 - `room_image`: File (image)
 - `hotel_id`: Number
 - `name`: String
@@ -183,6 +188,7 @@ Same body as add.
 **POST** `/api/booking`
 
 **Body**
+
 ```json
 {
   "hotel_id": 1,
@@ -217,8 +223,9 @@ Verifies the JWT token from header.
 ### ✅ `authorizeRoles(...roles)`
 
 Example:
+
 ```js
-authorizeRoles("admin")
+authorizeRoles("admin");
 ```
 
 Used to protect routes per user role.
@@ -259,6 +266,7 @@ Returned as full URL in response.
 ## 🧑‍💻 Author
 
 Made by a beginner in Node.js to showcase:
+
 - JWT authentication
 - Modular structure
 - Real-world REST API skills
@@ -268,8 +276,7 @@ Made by a beginner in Node.js to showcase:
 ## ✅ Final Notes
 
 This project is excellent to demonstrate:
+
 - Backend API development
 - Secure role-based systems
 - Real project structure and setup
-
-**Good luck with your interview!**
